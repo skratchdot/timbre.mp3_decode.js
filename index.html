@@ -18,7 +18,7 @@
 	&lt;script src="lib/timbre.js"&gt;&lt;/script&gt;
 	&lt;script src="timbre.mp3_decode.min.js"&gt;&lt;/script&gt;
 	&lt;script&gt;
-		T('audio').loadthis('test.mp3', function() {
+		T('audio').loadthis('audio/test.mp3', function() {
 		  this.play();
 		}).on('ended', function() {
 		  this.pause();
@@ -40,7 +40,7 @@
 	<script src="timbre.mp3_decode.min.js"></script>
 	<script>
 		function playmp3() {
-			T('audio').loadthis('test.mp3', function() {
+			T('audio').loadthis('audio/test.mp3', function() {
 			  this.play();
 			}).on('ended', function() {
 			  this.pause();
