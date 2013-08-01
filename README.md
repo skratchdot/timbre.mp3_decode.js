@@ -5,11 +5,17 @@ allows you to decode mp3s in the browser using [jsmad]().
 
 I've included source and minified versions of jsmad in this repo.
 
+
+## Demo
+
+[Timbre.js MP3 Online Decoding Demo](http://skratchdot.github.io/timbre.mp3_decode.js/)
+
+
 ## Dependencies
 
-- [timbre.js]()
+- [timbre.js](https://github.com/mohayonao/timbre.js/)
 
-- [jsmad]()
+- [jsmad](https://github.com/audiocogs/jsmad/)
 
 
 ## Usages
