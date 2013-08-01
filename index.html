@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>timbre.mp3_decode.js example</title>
+	<style type="text/css">
+		code pre {
+			border: 2px solid #999;
+			border-radius: 5px;
+			padding: 20px;
+			background: #eee;
+		}
+	</style>
+</head>
+<body>
+	<h1>Example Code:</h1>
+	<code>
+<pre>
+	&lt;script src="lib/jsmad.min.js"&gt;&lt;/script&gt;
+	&lt;script src="lib/timbre.js"&gt;&lt;/script&gt;
+	&lt;script src="timbre.mp3_decode.min.js"&gt;&lt;/script&gt;
+	&lt;script&gt;
+		T('audio').loadthis('test.mp3', function() {
+		  this.play();
+		}).on('ended', function() {
+		  this.pause();
+		});
+	&lt;/script&gt;
+</pre>
+	</code>
+	<button onclick="">Play Mp3</button>
+
+	<h2>Downloads:</h2>
+	<ul>
+		<li><a href="lib/jsmad.min.js">jsmad.min.js</a></li>
+		<li><a href="lib/timbre.js">timbre.js</a></li>
+		<li><a href="timbre.mp3_decode.min.js">timbre.mp3_decode.min.js</a></li>
+	</ul>
+
+	<script src="lib/jsmad.min.js"></script>
+	<script src="lib/timbre.js"></script>
+	<script src="timbre.mp3_decode.min.js"></script>
+	<script>
+		function playmp3() {
+			T('audio').loadthis('test.mp3', function() {
+			  this.play();
+			}).on('ended', function() {
+			  this.pause();
+			});
+		}
+	</script>
+</body>
+</html>
