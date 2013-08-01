@@ -57,9 +57,7 @@ if (typeof timbre !== 'undefined' && typeof Mad !== 'undefined') {
 						frame = Mad.Frame.decode(frame, mpegStream);
 						frameIndex++;
 					}
-				} catch (err) {
-					console.error(err);
-				}
+				} catch (err) {}
 
 				// we didn't get a valid mp3
 				if (length === 0 || channels < 1 || channels > 2) {
