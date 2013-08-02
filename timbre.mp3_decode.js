@@ -1,3 +1,10 @@
+/*!
+ * timbre.mp3_decode.js
+ * http://skratchdot.com/projects/timbre.mp3_decode.js/
+ *
+ * Copyright (c) 2013 skratchdot
+ * Licensed under the MIT license.
+ */
 /*globals timbre, Mad, Float32Array */
 if (typeof timbre !== 'undefined' && typeof Mad !== 'undefined') {
 	(function (T) {
