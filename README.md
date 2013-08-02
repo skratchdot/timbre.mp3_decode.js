@@ -18,7 +18,7 @@ I've included source and minified versions of jsmad in this repo.
 - [jsmad](https://github.com/audiocogs/jsmad/)
 
 
-## Usages
+## Usage
 
 ```html
 	<script src="jsmad.js"></script>
