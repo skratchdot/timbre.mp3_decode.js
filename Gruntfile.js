@@ -16,6 +16,9 @@ module.exports = function(grunt) {
 			}
 		},
 		uglify: {
+			options: {
+				preserveComments: 'some'
+			},
 			dist: {
 				files: {
 					'lib/jsmad.min.js': ['lib/jsmad.js'],
