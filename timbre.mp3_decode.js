@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
  */
 /*globals timbre, Mad, Float32Array */
-if (typeof timbre !== 'undefined' && typeof Mad !== 'undefined') {
+if (typeof timbre !== 'undefined' && typeof Mad !== 'undefined' && timbre.envtype === 'browser') {
 	(function (T) {
 		T.modules.Decoder.mp3_decode = (function() {
 			var _decode = function(data, onloadedmetadata, onloadeddata) {

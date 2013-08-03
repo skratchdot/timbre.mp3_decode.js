@@ -1,7 +1,7 @@
 {
 	"name": "timbre.mp3_decode.js",
 	"description": "play mp3s with timbre.js in the browser",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"homepage": "http://skratchdot.com/projects/timbre.mp3_decode.js/",
 	"author": {
 		"name": "skratchdot",
