@@ -4,6 +4,15 @@ module.exports = function(grunt) {
 
 	// Project configuration.
 	grunt.initConfig({
+		browserify: {
+			decoder: {
+				src: ['./lib/decoder.js'],
+				dest: './timbre.mp3_decode.js',
+				options: {
+					transform: ['workerify']
+				}
+			}
+		},
 		jshint: {
 			options: {
 				jshintrc: '.jshintrc'
@@ -12,7 +21,10 @@ module.exports = function(grunt) {
 				src: 'Gruntfile.js'
 			},
 			lib: {
-				src: ['timbre.mp3_decode.js']
+				options: {
+					ignores: ['./lib/jsmad.js', './lib/timbre.js']
+				},
+				src: ['./lib/**/*']
 			}
 		},
 		uglify: {
@@ -21,7 +33,6 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'lib/jsmad.min.js': ['lib/jsmad.js'],
 					'timbre.mp3_decode.min.js': ['timbre.mp3_decode.js']
 				}
 			}
@@ -31,7 +42,9 @@ module.exports = function(grunt) {
 	// These plugins provide necessary tasks.
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-browserify');
 
 	// Default task.
-	grunt.registerTask('default', ['jshint', 'uglify']);
+	grunt.registerTask('default', ['build']);
+	grunt.registerTask('build', ['jshint', 'browserify', 'uglify']);
 };
